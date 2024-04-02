@@ -1,5 +1,5 @@
 import { makeCharacter } from "./character.js";
-import { debugMode } from "./debugMode.js";
+import { debugMode } from "./debug.js";
 import { drawTile, getFramesPos, isMaxOneKeyDown } from "../utils.js";
 
 export function makePlayer(p, x, y) {
