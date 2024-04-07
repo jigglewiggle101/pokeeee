@@ -1,7 +1,7 @@
 import { makeNPC } from "../entities/npc.js";
 import { makePlayer } from "../entities/player.js";
 import { makeTiledMap } from "../entities/map.js";
-import { makeDialogBox } from "../entities/dialogBox.js";
+import { createDialogBox } from "../entities/dialog.js";
 import { makeCamera } from "../entities/camera.js";
 
 export function makeWorld(p, setScene) {
@@ -10,7 +10,7 @@ export function makeWorld(p, setScene) {
     player: makePlayer(p, 0, 0),
     npc: makeNPC(p, 0, 0),
     map: makeTiledMap(p, 100, -150),
-    dialogBox: makeDialogBox(p, 0, 280),
+    dialogBox: createDialogBox(p, 0, 280),
     makeScreenFlash: false,
     alpha: 0,
     blinkBack: false,
